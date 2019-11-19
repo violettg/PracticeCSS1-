@@ -1,0 +1,87 @@
+body
+{
+    background-color: 	#F5F5F5;
+}
+ h1{
+    text-align : center;  
+    text-decoration: none; 
+    overflow: hidden;
+ }
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.column{
+    float : left;
+    width : 33.33%;
+    padding: -30px; 
+}
+.boxHeader
+{
+    text-align : left; 
+    text-decoration: none;
+}
+.boxStyle0{
+    overflow: hidden;
+    background-color: white;
+    border-radius: 15px;
+    width: 350px;
+    height : 80%; 
+    padding: 50px;
+    margin: 45px;
+    position: relative;
+    top : 150px;
+    left : 300px; 
+}
+.boxStyle3{
+    overflow: hidden;
+    background-color: white;
+    border-radius: 15px;
+    width: 350px;
+    height : 80%; 
+    padding: 50px;
+    margin: 45px;
+    position: relative;
+    top : 150px;
+    right : 300px; 
+}
+.boxStyle2{
+    overflow: hidden;
+    background-color: white;
+    border-radius: 15px;
+    width: 350px;
+    height : 80%; 
+    padding: 50px;
+    margin: 45px;
+
+}
+
+img{
+    display: block;
+    margin-left:90%;
+}
+.supervisor {
+    border-top: 5px solid cyan;
+}
+.teamBuilder{
+    border-top: 5px solid red;
+}
+.karma{
+    border-top: 5px solid orange;
+}
+
+.calculator {
+    border-top: 5px solid blue;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @media screen and (max-width:150px) { 
+    .column {
+        background-color : lightgreen;
+        width: 100%;
+     
+    } 
+}
