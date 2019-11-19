@@ -9,12 +9,21 @@ body
  }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
-
-.column{
-    float : left;
-    width : 33.33%;
-    padding: -30px; 
+/* Creates the container */
+.row {
+    display: flex; 
+    flex-wrap:wrap;
+    padding:0 4px;
+    background-color: 	#F5F5F5;
 }
+/* Creates three columns */
+.column{
+    flex : 33.33%;
+    max-width : 33.33%;
+    padding: 0 4px; 
+}
+
+
 .boxHeader
 {
     text-align : left; 
@@ -28,9 +37,7 @@ body
     height : 80%; 
     padding: 50px;
     margin: 45px;
-    position: relative;
-    top : 150px;
-    left : 300px; 
+ 
 }
 .boxStyle3{
     overflow: hidden;
@@ -40,9 +47,7 @@ body
     height : 80%; 
     padding: 50px;
     margin: 45px;
-    position: relative;
-    top : 150px;
-    right : 300px; 
+ 
 }
 .boxStyle2{
     overflow: hidden;
