@@ -13,14 +13,19 @@ body
 .row {
     display: flex; 
     flex-wrap:wrap;
-    padding:0 4px;
-    background-color: 	#F5F5F5;
+    flex-direction: row;
+    /*padding:0 4px;*/
+    justify-content: space-around;
+    padding:0; 
+    background-color: #F5F5F5;
+
 }
 /* Creates three columns */
 .column{
-    flex : 33.33%;
-    max-width : 33.33%;
-    padding: 0 4px; 
+    flex-direction : column;
+   
+    /* 0 4px; */
+    padding:0px; 
 }
 
 
@@ -33,36 +38,38 @@ body
     overflow: hidden;
     background-color: white;
     border-radius: 15px;
-    width: 350px;
-    height : 80%; 
-    padding: 50px;
-    margin: 45px;
- 
-}
-.boxStyle3{
-    overflow: hidden;
-    background-color: white;
-    border-radius: 15px;
-    width: 350px;
-    height : 80%; 
-    padding: 50px;
-    margin: 45px;
+    width: 300px;
+    height : 30%; 
+
+    align-self: center;
  
 }
 .boxStyle2{
     overflow: hidden;
     background-color: white;
     border-radius: 15px;
-    width: 350px;
-    height : 80%; 
+    width: 100px;
+    height : 30%; 
     padding: 50px;
     margin: 45px;
 
 }
 
+.boxStyle3{
+    overflow: hidden;
+    background-color: white;
+    border-radius: 15px;
+    width: 100px;
+    height : 30%; 
+    padding: 50px;
+    margin: 45px;
+ 
+}
+
 img{
     display: block;
     margin-left:90%;
+    width : 100%; 
 }
 .supervisor {
     border-top: 5px solid cyan;
@@ -78,15 +85,11 @@ img{
     border-top: 5px solid blue;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
   @media screen and (max-width:150px) { 
     .column {
+        flex : 100%;
         background-color : lightgreen;
-        width: 100%;
+        max-width: 100%;
      
     } 
 }
