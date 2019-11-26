@@ -3,27 +3,35 @@ body
     background-color: 	#F5F5F5;
 }
  h1{
+    
     text-align : center;  
     text-decoration: none; 
     overflow: hidden;
  }
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
 /* Creates the container */
 .row {
     display: flex; 
     flex-wrap:wrap;
     flex-direction: row;
     /*padding:0 4px;*/
-    justify-content: space-around;
+    justify-content: space-around; 
     padding:0; 
     background-color: #F5F5F5;
 
+
 }
 /* Creates three columns */
-.column{
-    flex-direction : column;
-   
+.column0{
+    flex : 33.33%;
+    max-width: 33.33%;
+    /* flex-direction : column;  */
+    /* justify-content: center; */
     /* 0 4px; */
     padding:0px; 
 }
@@ -35,41 +43,45 @@ body
     text-decoration: none;
 }
 .boxStyle0{
+  
+    align-self: center;
     overflow: hidden;
     background-color: white;
     border-radius: 15px;
-    width: 300px;
-    height : 30%; 
-
-    align-self: center;
+    width: 375px;
+    height : 25%; 
+    padding: 50px;
+    margin: 50px;
+   
  
 }
-.boxStyle2{
+.boxStyle1{
     overflow: hidden;
     background-color: white;
     border-radius: 15px;
-    width: 100px;
-    height : 30%; 
+    width: 375px;
+    height : 25%; 
     padding: 50px;
-    margin: 45px;
+    margin: 50px;
 
 }
 
-.boxStyle3{
+.boxStyle2{
+    align-self: center;
     overflow: hidden;
     background-color: white;
     border-radius: 15px;
-    width: 100px;
-    height : 30%; 
+    width: 375px;
+    height : 25%; 
     padding: 50px;
-    margin: 45px;
+    margin: 50px;
  
 }
 
 img{
-    display: block;
+    /*display: block;*/
     margin-left:90%;
-    width : 100%; 
+    width : 10%; 
 }
 .supervisor {
     border-top: 5px solid cyan;
@@ -85,11 +97,12 @@ img{
     border-top: 5px solid blue;
 }
 
-  @media screen and (max-width:150px) { 
+  /*@media screen and (max-width:150px) { 
     .column {
         flex : 100%;
         background-color : lightgreen;
         max-width: 100%;
-     
-    } 
+            }
+            
+    }*/
 }
